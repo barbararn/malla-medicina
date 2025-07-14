@@ -31,7 +31,7 @@ const malla = [
   {
     semestre: "4° SEMESTRE",
     cursos: [
-      { nombre: "Prácticas Médicas IV", prereqs: ["Prácticas Médicas I"] },
+      { nombre: "Prácticas Médicas IV", prereqs: ["Prácticas Médicas III"] },
       { nombre: "So III- Soporte, Movimiento Y Control Neural", prereqs: ["So II - Digestión, Absorción, Reproducción Y Control Endocrino"] },
       { nombre: "Mecanismos De Agresión Y Defensa II", prereqs: ["Mecanismos De Agresión Y Defensa I"] },
       { nombre: "Salud Pública Y Sistemas De Salud", prereqs: ["Estilo De Vida, Salud Y Medio Ambiente"] },
