@@ -1,12 +1,8 @@
 body {
   font-family: Arial, sans-serif;
   padding: 2rem;
-  background-color: #f9f9f9;
+  background-color: #fce7dd; /* melocotón claro */
   text-align: center;
-}
-
-h1 {
-  margin-bottom: 30px;
 }
 
 .grid {
@@ -18,8 +14,8 @@ h1 {
 }
 
 .course {
-  background-color: #ffffff;
-  border: 2px solid #cccccc;
+  background-color: #ffffff; /* por defecto blanco, se alternarán con JS opcionalmente */
+  border: 2px solid #ccc;
   padding: 15px;
   border-radius: 10px;
   cursor: pointer;
@@ -27,19 +23,25 @@ h1 {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.course:nth-child(5n+1) {
+  background-color: #f3dcdc; /* rosa pastel */
+}
+
+.course:nth-child(5n+2) {
+  background-color: #fce7dd; /* melocotón */
+}
+
+.course:nth-child(5n+3) {
+  background-color: #faf7d1; /* vainilla */
+}
+
+.course:nth-child(5n+4) {
+  background-color: #daf4a2; /* verde pastel */
+}
+
+.course:nth-child(5n+5) {
+  background-color: #d6f8f3; /* celeste pastel */
+}
+
 .course:hover {
-  transform: scale(1.03);
-}
-
-.course.locked {
-  background-color: #eeeeee;
-  color: #aaaaaa;
-  border-color: #aaaaaa;
-  cursor: not-allowed;
-}
-
-.course.completed {
-  text-decoration: line-through;
-  background-color: #d4edda;
-  color: #2e7d32;
-}
+  transform:
