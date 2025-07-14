@@ -2,50 +2,13 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Malla Interactiva</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      background-color: #f2f2f2;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(10, 40px);
-      grid-template-rows: repeat(10, 40px);
-      gap: 2px;
-    }
-    .cell {
-      width: 40px;
-      height: 40px;
-      background-color: white;
-      border: 1px solid #ccc;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-    .cell.active {
-      background-color: #4CAF50;
-    }
-  </style>
+  <title>Malla Curricular de Medicina</title>
+  <link rel="stylesheet" href="estilos.css" />
 </head>
 <body>
-  <div class="grid" id="grid"></div>
+  <h1>Malla Curricular de Medicina</h1>
+  <div id="malla" class="grid"></div>
 
-  <script>
-    const grid = document.getElementById('grid');
-
-    for (let i = 0; i < 100; i++) {
-      const cell = document.createElement('div');
-      cell.className = 'cell';
-      cell.addEventListener('click', () => {
-        cell.classList.toggle('active');
-      });
-      grid.appendChild(cell);
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
