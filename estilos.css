@@ -1,47 +1,49 @@
 body {
   font-family: Arial, sans-serif;
+  background-color: #fef9f4;
+  margin: 0;
   padding: 2rem;
-  background-color: #fce7dd; /* melocotón claro */
-  text-align: center;
+  color: #333;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 15px;
-  max-width: 1400px;
-  margin: auto;
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.semestre {
+  margin-bottom: 2rem;
+}
+
+.semestre h2 {
+  background-color: #f8edeb;
+  padding: 0.5rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
 }
 
 .course {
-  background-color: #ffffff; /* por defecto blanco, se alternarán con JS opcionalmente */
-  border: 2px solid #ccc;
-  padding: 15px;
   border-radius: 10px;
+  padding: 1rem;
+  background-color: #fae1dd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  transition: transform 0.2s ease;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.course:nth-child(5n+1) {
-  background-color: #f3dcdc; /* rosa pastel */
-}
-
-.course:nth-child(5n+2) {
-  background-color: #fce7dd; /* melocotón */
-}
-
-.course:nth-child(5n+3) {
-  background-color: #faf7d1; /* vainilla */
-}
-
-.course:nth-child(5n+4) {
-  background-color: #daf4a2; /* verde pastel */
-}
-
-.course:nth-child(5n+5) {
-  background-color: #d6f8f3; /* celeste pastel */
+  margin: 0.5rem 0;
+  transition: all 0.3s ease;
 }
 
 .course:hover {
-  transform:
+  transform: scale(1.03);
+}
+
+.course.completed {
+  background-color: #d3f8e2;
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.course.locked {
+  background-color: #e2eafc;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
